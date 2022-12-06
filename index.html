@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/style.css" rel="stylesheet">
+    <title> Coding Quiz</title>
+</head>
+<body>
+    <div class="box">
+        <div id="question-box" class="hide"></div>
+        <h1 class="time"></h1>
+          <div id="questions">Coding quiz</div>
+          <div id="answer-btns" class="btn-grid">
+              <button class="button">Answer 1</button>
+              <button class="button">Answer 2</button>
+              <button class="button">Answer 3</button>
+              <button class="button">Answer 4</button>
+          </div>
+        <div class="control-keys">
+            <button id="begin-btn" class="begin-button">Begin Quiz</button>
+            <button id="next-btn" class="hide-next-btn">Next</button>
+        </div>
+        <div class="highscore">
+            <h2>HighScore</h2>
+            <form>
+              <ul>
+                <li>
+                  <label for="name">Player name</label>
+                  <textarea id="username" name="playername"></textarea>
+                </li>
+              </ul>
+              <button id="save">SAVE</button>
+            </form>    
+          </div>
+          <div class="card">
+            <h2>Last HighScore</h2>
+            <p>Players Name: <span id="saved-name"></span></p>
+          </div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
